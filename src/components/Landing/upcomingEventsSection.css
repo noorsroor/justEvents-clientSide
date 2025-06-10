@@ -1,0 +1,109 @@
+/* src/components/Landing/upcomingEventsSection.css */
+.upcoming-events-calendar {
+  background: #ffffff;
+  padding: 4rem 2rem;
+  margin-top: 3rem;
+}
+
+.section-title-with-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #062743;
+  margin-bottom: 2rem;
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.calendar-event-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.calendar-event-card {
+  display: flex;
+  background-color: #f9f9f9;
+  border-radius: 14px;
+  padding: 1.2rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  align-items: center;
+  gap: 20px;
+  transition: transform 0.2s ease;
+}
+
+.calendar-event-card:hover {
+  transform: translateY(-4px);
+}
+
+.calendar-date-box {
+  background-color: #4f959d;
+  color: white;
+  border-radius: 12px;
+  padding: 12px;
+  min-width: 80px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-day {
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.calendar-month {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.calendar-weekday {
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+.calendar-event-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.calendar-event-info h4 {
+  color: #062743;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.calendar-event-info p {
+  color: #113a5d;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.calendar-event-link {
+  margin-top: 8px;
+  align-self: start;
+  background-color: #062743;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: background-color 0.2s ease;
+}
+
+.calendar-event-link:hover {
+  background-color: #113a5d;
+}

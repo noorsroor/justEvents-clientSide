@@ -1,0 +1,127 @@
+.my-bookings {
+  padding: 40px;
+  background-color: #F9F9F9;
+  min-height: 80vh;
+}
+
+.my-bookings h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #062743;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.no-bookings {
+  font-size: 18px;
+  color: #888;
+  margin-top: 20px;
+}
+
+.booking-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.booking-card {
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+  border-left: 5px solid #4F959D;
+}
+
+.booking-card:hover {
+  transform: translateY(-5px);
+}
+
+.booking-card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #113A5D;
+}
+
+.booking-card p {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.cancel-button {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cancel-button:hover {
+  background-color: #c9302c;
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+.badge.pending {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.badge.approved {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.badge.rejected {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.back-button {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  color: #4F959D;
+  margin-bottom: 15px;
+  cursor: pointer;
+  padding-left: 4px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.back-button:hover {
+  color: #113A5D;
+}
+
+.details-link {
+  display: block;
+  margin-left: auto;
+  width: fit-content;
+  text-align: right;
+  background: none;
+  border: none;
+  color: #4F959D;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: color 0.2s ease;
+}
+
+.details-link:hover {
+  color: #113A5D;
+  text-decoration: underline;
+}
+
+
+

@@ -1,0 +1,38 @@
+.my-rsvps-container {
+  padding: 60px 30px;
+  background: linear-gradient(135deg, #f9f9f9, #e8f1f5);
+  min-height: 100vh;
+}
+
+.my-rsvps-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.my-rsvps-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #062743;
+  margin: 0 auto;
+}
+
+.my-rsvps-count-label {
+  position: absolute;
+  left: 0;
+  background-color: #4F959D;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.my-rsvps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}

@@ -1,0 +1,93 @@
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F0FAF9; /* soft teal background */
+  padding: 20px 24px;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.page-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #113A5D;
+  flex: 1;
+  text-align: center;
+  margin-left: -2rem; /* centers despite button */
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.edit-btn {
+  background-color: #e8f0fe;
+  color: #1d4ed8;
+}
+
+.edit-btn:hover {
+  background-color: #dbeafe;
+  color: #1e3a8a;
+}
+
+.delete-btn {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+.delete-btn:hover {
+  background-color: #fecaca;
+  color: #7f1d1d;
+}
+
+/* Full-height layout fix */
+.campus-admin-page,
+.manage-rooms-page,
+.manage-buildings-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8fafa;
+}
+
+/* Ensures content grows and scrolls inside */
+.table-wrapper {
+  flex: 1;
+  overflow-x: auto;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  padding: 1.5rem;
+  border: 1px solid #eee;
+  margin-top: 1rem;
+}
+
+/* Let table expand naturally */
+.rooms-table,
+.buildings-table {
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
+}
+
+/* Push footer to bottom if content is short */
+footer {
+  margin-top: auto;
+}
+

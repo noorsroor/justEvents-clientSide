@@ -1,0 +1,130 @@
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+/* Modal Container */
+.modal-form {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 500px;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.3s ease;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Modal Title */
+.modal-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #062743;
+  text-align: center;
+  margin-bottom: 1.75rem;
+}
+
+/* Floating Input Wrapper */
+.input-wrapper {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+/* Input and Select Fields */
+.input-field,
+.select-field {
+  width: 100%;
+  padding: 1.2rem 1rem 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  background-color: #fff;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.input-field:focus,
+.select-field:focus {
+  border-color: #4F959D;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(79, 149, 157, 0.2);
+}
+
+/* Floating Labels */
+.input-label {
+  position: absolute;
+  top: 0.65rem;
+  left: 1rem;
+  font-size: 0.82rem;
+  color: #666;
+  background-color: #fff;
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+
+.input-field:focus + .input-label,
+.select-field:focus + .input-label,
+.input-field:not(:placeholder-shown) + .input-label,
+.select-field:not([value=""]) + .input-label {
+  top: -0.55rem;
+  left: 0.9rem;
+  font-size: 0.72rem;
+  color: #4F959D;
+  padding: 0 4px;
+}
+
+/* Button Container */
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+/* Buttons */
+.modal-button {
+  padding: 0.55rem 1.3rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+/* Cancel Button */
+.cancel-btn {
+  background-color: #f3f4f6;
+  color: #374151;
+}
+
+.cancel-btn:hover {
+  background-color: #e5e7eb;
+  transform: translateY(-1px);
+}
+
+/* Submit Button */
+.submit-btn {
+  background-color: #4F959D;
+  color: #fff;
+}
+
+.submit-btn:hover {
+  background-color: #387a81;
+  transform: translateY(-1px);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

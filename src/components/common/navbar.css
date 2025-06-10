@@ -1,0 +1,187 @@
+/* === BASE GRID LAYOUT === */
+.navbar {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 12px 40px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e6e6e6;
+  font-family: 'Segoe UI', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  gap: 2rem;
+  overflow-x: auto;
+}
+
+/* === LEFT: Logo === */
+.navbar-left {
+  flex-shrink: 0;
+}
+.navbar-logo-img {
+  height: 40px;
+}
+
+/* === CENTER: Search Bar === */
+.navbar-center {
+  display: flex;
+  justify-content: center;
+  min-width: 240px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* === RIGHT: Navigation Links === */
+.navbar-right {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-left: 10px;
+  flex-shrink: 0;
+}
+.navbar-right::-webkit-scrollbar {
+  display: none;
+}
+
+/* === Nav Link Styling === */
+.navbar-right a {
+  text-decoration: none;
+  color: #062743;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 6px 12px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.navbar-right a:hover {
+  background-color: #e8f3f1;
+  color: #4f959d;
+}
+.navbar-right a.active {
+  background-color: #4f959d20;
+  color: #4f959d;
+  font-weight: 600;
+}
+
+/* === Logout Button === */
+.logout-button {
+  background-color: #4f959d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  white-space: nowrap;
+}
+.logout-button:hover {
+  background-color: #113a5d;
+  transform: translateY(-2px);
+}
+.logout-button:focus {
+  outline: 2px solid #113a5d;
+  outline-offset: 2px;
+}
+
+/* === MOBILE RESPONSIVE === */
+@media (max-width: 768px) {
+  .navbar {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    padding: 10px 20px;
+    gap: 10px;
+  }
+
+  .navbar-left,
+  .navbar-center,
+  .navbar-right {
+    justify-content: center;
+    margin: 4px 0;
+  }
+
+  .navbar-right {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+
+  .navbar-center {
+    margin-bottom: 10px;
+  }
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 2rem;
+}
+
+.navbar-left {
+  flex-shrink: 0;
+}
+
+.navbar-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.brand-name {
+  font-family: 'Pacifico', cursive;
+  font-size: 34px;
+  display: flex;
+  align-items: center;
+  transform: translateY(-2px) rotate(-1.5deg); /* subtle uplift */
+}
+
+.brand-link {
+  text-decoration: none;
+  display: flex;
+}
+
+.brand-navy {
+  color: #062743; /* exact navy */
+  letter-spacing: -2px;
+}
+
+.brand-teal {
+  color: #4F959D; /* exact teal */
+  margin-left: -1px;
+}
+
+@keyframes jump {
+  0%   { transform: translateY(0); }
+  30%  { transform: translateY(-5px); }
+  60%  { transform: translateY(0); }
+  100% { transform: translateY(0); }
+}
+
+.brand-name {
+  font-family: 'Pacifico', cursive;
+  font-size: 34px;
+  display: flex;
+  align-items: center;
+  animation: jump 2.5s infinite ease-in-out;
+}
+
+.brand-link {
+  text-decoration: none;
+  display: flex;
+}
+
+.brand-navy {
+  color: #062743;
+  letter-spacing: -2px;
+}
+
+.brand-teal {
+  color: #4F959D;
+  margin-left: -1px;
+}
+

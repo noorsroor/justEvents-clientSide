@@ -1,0 +1,100 @@
+/* src/components/Events/eventCard.css */
+
+.event-card {
+  background: #f9f9f9;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.event-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
+}
+
+.event-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background-color: #98d2c0;
+  transition: filter 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .event-image {
+    height: 200px;
+  }
+}
+
+.event-image.placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #f9f9f9;
+  background: #4f959d;
+  height: 180px;
+}
+
+.event-body {
+  padding: 1.4rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  flex: 1;
+}
+
+.event-date {
+  color: #4f959d;
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.event-title {
+  color: #062743;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.event-category {
+  background: #98d2c0;
+  color: #062743;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 12px;
+  width: fit-content;
+}
+
+.event-description {
+  font-size: 0.875rem;
+  color: #113a5d;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.event-button {
+  background-color: #062743;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: auto;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.event-button:hover {
+  background-color: #113a5d;
+  transform: scale(1.03);
+}

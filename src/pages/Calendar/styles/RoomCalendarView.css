@@ -1,0 +1,83 @@
+.room-calendar {
+  padding: 40px;
+  background-color: #F9F9F9;
+  min-height: 80vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.room-calendar h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #062743;
+  margin-bottom: 20px;
+}
+
+.calendar-container {
+  height: 600px;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  border: 1px solid #E0E0E0;
+  padding: 8px;
+}
+
+.back-button {
+  display: inline-block;
+  background: none;
+  border: none;
+  color: #4F959D;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.back-button:hover {
+  color: #113A5D;
+  text-decoration: underline;
+}
+
+.legend {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  align-items: center;
+  font-weight: 500;
+}
+
+.legend .badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  color: white;
+}
+
+.legend .approved {
+  background-color: #98D2C0;
+  color: #062743;
+}
+
+.legend .pending {
+  background-color: #113A5D;
+  color: white;
+}
+
+.legend .rejected {
+  background-color: #d9534f;
+  color: white;
+}
+
+
+/* Force white text in agenda view for dark-colored bookings */
+.rbc-agenda-view .pending-event .rbc-agenda-event-cell,
+.rbc-agenda-view .rejected-event .rbc-agenda-event-cell {
+  color: white !important;
+}
+
+/* Make all agenda columns white for Pending and Rejected rows */
+.rbc-agenda-view .pending-event td,
+.rbc-agenda-view .rejected-event td {
+  color: white !important;
+}

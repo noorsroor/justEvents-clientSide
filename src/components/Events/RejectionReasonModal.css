@@ -1,0 +1,61 @@
+/* Modal overlay covers whole screen */
+.modal-overlay-fixed {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Inner modal box */
+.modal-box {
+  background-color: #ffffff;
+  width: 400px;
+  padding: 24px 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: popUp 0.25s ease;
+}
+
+/* Title */
+.modal-box h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #062743;
+  margin-bottom: 12px;
+}
+
+/* Reason text */
+.modal-box p {
+  color: #333;
+  margin-bottom: 16px;
+}
+
+/* Close button */
+.modal-close-btn {
+  background-color: #113A5D;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.modal-close-btn:hover {
+  background-color: #0e2f4d;
+}
+
+@keyframes popUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}

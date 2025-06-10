@@ -1,0 +1,119 @@
+/* Container */
+.saved-events-container {
+  padding: 60px 30px;
+  background: linear-gradient(135deg, #f9f9f9, #e8f1f5);
+  min-height: 100vh;
+}
+.saved-header {
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.saved-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #062743;
+  margin: 0 auto;
+}
+
+.saved-count-container {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.saved-count-label {
+  background-color: #4F959D;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Saved Events Grid */
+.saved-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Glowing Event Card */
+.event-glow-card {
+  background: linear-gradient(145deg, #ffffff, #f3faff);
+  border-radius: 16px;
+  padding: 24px;
+  border-left: 6px solid #4F959D;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.event-glow-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.15);
+}
+
+/* Event Content */
+.event-content h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #113A5D;
+  margin-bottom: 0.5rem;
+}
+
+.event-content p {
+  font-size: 0.95rem;
+  color: #4F959D;
+  margin-bottom: 1.2rem;
+}
+
+/* Buttons */
+.event-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.event-unsave-btn {
+  background-color: #062743;
+  color: #ffffff;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.event-unsave-btn:hover {
+  background-color: #113A5D;
+}
+
+.event-details-btn {
+  background-color: #4F959D;
+  color: #ffffff;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.event-details-btn:hover {
+  background-color: #3E7F89;
+}
+
+.event-icon {
+  margin-right: 5px;
+  color: #4F959D;
+}

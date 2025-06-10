@@ -1,0 +1,351 @@
+/* Page Layout */
+.campus-admin-page {
+  padding: 2rem 6%;
+  background-color: #F9F9F9;
+  min-height: 100vh;
+}
+
+/* Back Button */
+.back-btn {
+  background-color: #062743;
+  color: #ffffff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+}
+
+.back-btn:hover {
+  background-color: #113A5D;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+th {
+  background-color: #E4F1F1;
+  color: #062743;
+  text-align: left;
+  padding: 12px 16px;
+}
+
+td {
+  padding: 12px 16px;
+  color: #113A5D;
+  border-bottom: 1px solid #eaeaea;
+}
+
+tr:hover {
+  background-color: #f0fdfd;
+}
+
+/* Action Buttons */
+.action-button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.action-button.approve {
+  background-color: #4F959D;
+  color: white;
+}
+
+.action-button.approve:hover {
+  background-color: #3b7f86;
+}
+
+.action-button.reject {
+  background-color: #c0392b;
+  color: white;
+}
+
+.action-button.reject:hover {
+  background-color: #992d22;
+}
+
+.action-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Empty Message */
+.empty-row {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+  padding: 2rem 0;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+/* Center title with icon */
+.admin-title.centered {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Style the title text */
+.admin-title h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #062743;
+  margin: 0;
+}
+
+/* New icon style */
+.title-icon {
+  font-size: 34px;
+  color: #4F959D;
+}
+
+/* Back button (left-aligned) */
+.back-link {
+  background-color: #f0f0f0;
+  color: #062743;
+  padding: 6px 14px;
+  font-size: 14px;
+  border-radius: 999px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border: 1px solid #ddd;
+}
+
+.back-link:hover {
+  background-color: #e0e0e0;
+  border-color: #ccc;
+}
+
+/* Improve chart section spacing */
+.analytics-section {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Reduce chart height */
+.analytics-chart {
+  height: 250px;
+}
+
+/* Fix spacing between cards */
+.stat-card-grid {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card-grid.row-1 {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.stat-card-grid.row-2 {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+/* === Section spacing === */
+.campus-admin-page {
+  padding: 2rem 6%;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+section.space-y-12 > div {
+  margin-bottom: 3rem;
+}
+
+/* === Headings === */
+h2.text-2xl {
+  color: #062743;
+}
+
+/* === Action buttons === */
+button.bg-accent {
+  background-color: #4F959D;
+}
+
+button.bg-highlight {
+  background-color: #387a81;
+}
+
+button.bg-accent:hover,
+button.bg-highlight:hover {
+  opacity: 0.9;
+}
+
+/* === Table styling === */
+table {
+  width: 100%;
+  font-size: 0.875rem;
+  border-collapse: collapse;
+}
+
+thead th {
+  font-weight: 600;
+  color: #113A5D;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+tbody td {
+  padding: 0.75rem 0.5rem;
+  border-bottom: 1px solid #eee;
+  color: #062743;
+}
+
+tr:hover {
+  background-color: #f3f8f7;
+}
+
+/* === Modals === */
+.animate-fadeIn {
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* ====== Shared Section Layout ====== */
+.admin-section {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2.5rem;
+  border: 1px solid #e5e5e5;
+}
+
+.admin-section h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #062743;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ====== Table Styling ====== */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  color: #113a5d;
+}
+
+.admin-table thead {
+  background-color: #f5f9fa;
+  border-bottom: 2px solid #ddd;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.admin-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* ====== Buttons ====== */
+.admin-action-button {
+  font-size: 0.9rem;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.admin-action-button.edit {
+  color: #1d4ed8;
+}
+
+.admin-action-button.edit:hover {
+  text-decoration: underline;
+}
+
+.admin-action-button.delete {
+  color: #b91c1c;
+}
+
+.admin-action-button.delete:hover {
+  text-decoration: underline;
+}
+
+/* ====== Add Button ====== */
+.add-button {
+  background-color: #4f959d;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #3d7e84;
+}
+
+.add-button svg {
+  stroke-width: 2;
+}
+
+/* ====== Empty State ====== */
+.admin-empty {
+  text-align: center;
+  color: #94a3b8;
+  padding: 2rem 0;
+  font-size: 0.95rem;
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 768px) {
+  .admin-section {
+    padding: 1.2rem;
+  }
+
+  .admin-table th,
+  .admin-table td {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .add-button {
+    padding: 8px 14px;
+  }
+}

@@ -1,0 +1,95 @@
+/* src/components/Feedback/eventFeedback.css */
+
+.feedback-list {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  max-width: 800px;
+  margin: 2rem auto;
+  transition: all 0.3s ease;
+}
+
+.feedback-heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #062743;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.feedback-item {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 1.5rem 0;
+  transition: background-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-item:hover {
+  background-color: #f5f9fa;
+  border-radius: 8px;
+}
+
+.feedback-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+  color: #4f959d;
+  font-size: 0.9rem;
+}
+
+.feedback-user {
+  font-weight: 600;
+  color: #062743;
+}
+
+.feedback-date {
+  font-style: italic;
+  color: #888;
+}
+
+.feedback-comment {
+  font-size: 1rem;
+  color: #113A5D;
+  margin-bottom: 12px;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+.feedback-rating {
+  display: flex;
+  gap: 5px;
+  margin-top: 8px;
+}
+
+.feedback-actions {
+  margin-top: 8px;
+}
+
+.feedback-actions button {
+  margin-right: 10px;
+  background: #4f959d;
+  color: white;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.feedback-actions button:hover {
+  background: #3c7c85;
+}
+
+.edited-badge {
+  font-size: 0.85rem;
+  color: #666;
+  margin-left: 4px;
+}
+
+.feedback-date {
+  font-size: 0.85rem;
+  color: #777;
+  margin-left: 4px;
+}

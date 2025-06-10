@@ -1,0 +1,39 @@
+.request-role-container {
+  max-width: 600px;
+  margin: auto;
+  background: #fdfdfd;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.request-role-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.request-role-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+}
+
+.request-role-form select,
+.request-role-form input[type="file"],
+.request-role-form button {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.request-role-form button {
+  background-color: #113a5d;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.request-role-form button:hover {
+  background-color: #0d2f4c;
+}

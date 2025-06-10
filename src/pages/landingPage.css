@@ -1,0 +1,99 @@
+/* ========= General Layout ========= */
+.landing-container {
+    background: linear-gradient(to bottom right, #f9f9f9, #e8f3f1);
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* ========= Hero Carousel Section ========= */
+  .hero-carousel-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  /* Carousel inner container styles */
+  .carousel-container {
+    width: 100%;
+    max-width: 1100px;
+    position: relative;
+    background-color: #e8f3f1;
+    padding: 4rem 2rem;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    transition: background-color 0.4s ease;
+  }
+  
+  .carousel-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .carousel-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #062743;
+    margin-bottom: 1.5rem;
+  }
+  
+  .carousel-subtitle {
+    font-size: 1.2rem;
+    color: #113a5d;
+    margin-bottom: 2rem;
+  }
+  
+  .carousel-button {
+    background-color: #062743;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .carousel-button:hover {
+    background-color: #113a5d;
+  }
+  
+  /* ========= Search Bar Wrapper ========= */
+  .search-bar-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem 4rem;
+  }
+  
+  /* ========= Footer ========= */
+  .footer {
+    background-color: #062743; /* matches navbar */
+    color: #ffffff;
+    text-align: center;
+    padding: 24px 12px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-top: auto;
+    border-top: 4px solid #4f959d;
+    width: 100%;
+  }
+  
+  /* ========= Responsive Enhancements ========= */
+  @media (max-width: 768px) {
+    .carousel-title {
+      font-size: 2.2rem;
+    }
+  
+    .carousel-subtitle {
+      font-size: 1rem;
+    }
+  
+    .search-bar-wrapper {
+      padding: 1rem;
+    }
+  }
+  

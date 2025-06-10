@@ -1,0 +1,115 @@
+.carousel-container {
+  width: 100%;
+  max-width: 1200px;           /* Not full width, but wide */
+  margin: 0 auto;              /* Centered */
+  padding: 5rem 3rem 6rem;
+  text-align: center;
+  background-color: inherit;   /* Keeps background dynamic */
+  border-radius: 16px;
+  position: relative;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.4s ease;
+}
+
+.carousel-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.carousel-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #062743;
+  margin-bottom: 1.5rem;
+}
+
+.carousel-subtitle {
+  font-size: 1.2rem;
+  color: #113a5d;
+  margin-bottom: 2rem;
+}
+
+.carousel-button {
+  background-color: #062743;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-button:hover {
+  background-color: #113a5d;
+}
+
+/* Navigation Arrows on sides */
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  pointer-events: none; /* So only buttons are clickable */
+}
+
+.carousel-controls button {
+  background-color: #4f959d;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  pointer-events: all;
+  transition: background-color 0.2s ease;
+}
+
+.carousel-controls button:hover {
+  background-color: #062743;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .carousel-container {
+    padding: 3rem 1.5rem;
+    max-width: 95%;
+  }
+
+  .carousel-title {
+    font-size: 2.2rem;
+  }
+
+  .carousel-subtitle {
+    font-size: 1rem;
+  }
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 2rem;
+}
+
+
+.carousel-dots .dot.active {
+  background-color: #4f959d;
+}
+.carousel-dots .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.carousel-dots .dot:hover {
+  transform: scale(1.2);
+}

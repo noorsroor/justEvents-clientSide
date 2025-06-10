@@ -1,0 +1,171 @@
+/* ===================================
+    Custom Marker Styling
+=================================== */
+.marker {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===================================
+    Info Window (Floating box)
+=================================== */
+.info-window {
+  z-index: 1000;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  padding: 14px 12px;
+  width: 220px;
+  text-align: left;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  font-size: 14px;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+.info-window h4 {
+  margin: 0 0 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+}
+
+/* ===================================
+    Buttons inside InfoWindow
+=================================== */
+.info-window-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.info-window button {
+  width: 100%;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 7px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.info-window button:hover {
+  background-color: #43a047;
+  transform: translateY(-1px);
+}
+
+.info-window button:last-child {
+  background-color: #bbb;
+  color: #fff;
+}
+
+.info-window button:last-child:hover {
+  background-color: #999;
+}
+
+/* ===================================
+    Fade + Bounce Animation
+=================================== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes markerBounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-6px); }
+}
+
+
+.room-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3000;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.25s ease;
+}
+
+.room-modal-content {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  width: 360px;
+  max-width: 90%;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease-in-out;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.room-modal-title {
+  font-size: 20px;
+  margin-bottom: 16px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.room-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #888;
+  cursor: pointer;
+}
+
+.room-modal-close:hover {
+  color: #000;
+}
+
+.campus-map-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.map-wrapper {
+  flex: 1;
+  height: 100%;
+}
+.modal-icon {
+  margin-right: 8px;
+  color: #4CAF50;
+  font-size: 18px;
+  vertical-align: middle;
+}
+.reset-view-btn {
+  position: fixed;
+  bottom: 80px;
+  right: 30px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  font-size: 14px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  cursor: pointer;
+  z-index: 2000;
+  transition: background-color 0.2s;
+}
+
+.reset-view-btn:hover {
+  background-color: #125ea9;
+}

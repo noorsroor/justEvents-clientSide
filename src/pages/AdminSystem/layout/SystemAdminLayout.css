@@ -1,0 +1,35 @@
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.admin-sidebar {
+  width: 240px;
+  background-color: #062743;
+  color: white;
+  padding: 1.5rem;
+}
+
+.admin-sidebar h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  color: #98D2C0;
+}
+
+.admin-sidebar nav a {
+  display: block;
+  color: #F9F9F9;
+  margin: 10px 0;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.admin-sidebar nav a.active {
+  color: #4F959D;
+}
+
+.admin-content {
+  flex-grow: 1;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}

@@ -1,0 +1,82 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.notifications-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center; /* Horizontally center page content */
+}
+
+.notifications-page {
+  flex: 1;
+  width: 100%;
+  max-width: 800px;
+  padding: 2rem;
+}
+
+.actions {
+  margin-bottom: 1.5rem;
+}
+
+.actions button {
+  margin-right: 12px;
+  padding: 8px 14px;
+  border: none;
+  background-color: #4F959D;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.empty-message {
+  color: #777;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+}
+
+.notification-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.notification-list li {
+  padding: 12px 18px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-left: 5px solid #113A5D;
+  border-radius: 8px;
+  position: relative;
+}
+
+.notification-list li.unread {
+  border-left-color: #e67e22;
+  background-color: #fef8f4;
+}
+
+.notification-list li p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.notification-list li small {
+  display: block;
+  margin-top: 6px;
+  color: #888;
+}
+
+.notification-list li button {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  padding: 4px 10px;
+  font-size: 0.85rem;
+  background-color: #4F959D;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

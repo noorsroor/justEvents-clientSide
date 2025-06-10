@@ -1,0 +1,78 @@
+/* src/components/Landing/dualCTASection.css */
+
+.dual-cta-section {
+  text-align: center;
+  background-color: #e8f3f1;
+  padding: 4rem 2rem;
+  margin-top: 4rem;
+  border-top: 6px solid #4f959d;
+  border-radius: 24px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease;
+}
+
+.cta-title {
+  font-size: 2rem;
+  color: #062743;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.cta-subtitle {
+  font-size: 1.1rem;
+  color: #113a5d;
+  max-width: 640px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+  transition: color 0.2s ease;
+}
+
+.cta-button-group {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-button-group button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #062743;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button-group button:hover {
+  background-color: #113a5d;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.cta-button-group button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+  .cta-button-group {
+    gap: 12px;
+  }
+  .cta-button-group button {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-subtitle {
+    font-size: 1rem;
+  }
+}

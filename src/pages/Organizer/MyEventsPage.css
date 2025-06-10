@@ -1,0 +1,138 @@
+.my-events-container {
+  background-color: #F9F9F9;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  color: #113a5d;
+  font-size: 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.3s ease;
+}
+
+.back-btn:hover {
+  color: #4f959d;
+}
+
+.my-events-heading {
+  color: #062743;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 2px solid #113A5D;
+  background-color: white;
+  color: #113A5D;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filter-btn.active {
+  background-color: #113A5D;
+  color: white;
+}
+
+.event-card-list {
+  display: grid;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.event-card {
+  display: flex;
+  gap: 16px;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.event-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.event-placeholder {
+  width: 150px;
+  height: 150px;
+  background-color: #e6e6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #777;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.event-details {
+  padding: 16px;
+  flex: 1;
+}
+
+.event-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.action-btn {
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.edit-btn {
+  background-color: #4F959D;
+}
+
+.delete-btn {
+  background-color: #D9534F;
+}
+
+.view-btn {
+  background-color: #4F959D;
+}
+
+.status-approved {
+  color: #4F959D;
+}
+
+.status-pending {
+  color: #F0AD4E;
+}
+
+.status-rejected {
+  color: #D9534F;
+}
+
+.no-events-message,
+.loading-message {
+  text-align: center;
+  color: #062743;
+  margin-top: 20px;
+}

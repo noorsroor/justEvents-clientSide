@@ -1,0 +1,152 @@
+/* --- Feedback Form Layout --- */
+.feedback-form {
+  background-color: #F9F9F9;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  padding: 2.5rem;
+  max-width: 600px;
+  margin: 2.5rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border-left: 4px solid #4F959D;
+}
+
+.feedback-form h3 {
+  font-size: 2rem;
+  color: #113A5D;
+  text-align: center;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #4F959D;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* --- Textarea Styling --- */
+.feedback-form textarea {
+  border-radius: 8px;
+  border: 1px solid #C2D7DD;
+  padding: 12px;
+  resize: vertical;
+  font-size: 1rem;
+  height: 140px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  background-color: #ffffff;
+}
+
+.feedback-form textarea:focus {
+  border-color: #4F959D;
+  outline: none;
+  box-shadow: 0 0 8px rgba(79, 149, 157, 0.3);
+}
+
+.feedback-form textarea::placeholder {
+  color: #888;
+}
+
+/* --- Character Counter --- */
+.char-counter {
+  text-align: right;
+  font-size: 0.9rem;
+  color: #4F959D;
+  font-weight: 500;
+}
+
+/* --- Star Rating Styling --- */
+.star-rating {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.star-rating .star {
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.star-rating .star.active {
+  color: #f7b42c;
+}
+
+.star-rating .star:hover,
+.star-rating .star.active:hover {
+  color: #f9d57e;
+}
+
+/* --- Submit Button --- */
+.feedback-form button {
+  background-color: #062743;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.feedback-form button:hover {
+  background-color: #4F959D;
+  box-shadow: 0px 5px 15px rgba(79, 149, 157, 0.2);
+}
+
+.feedback-form button:disabled {
+  background-color: #C2D7DD;
+  cursor: not-allowed;
+}
+
+/* --- Edit/Delete Buttons --- */
+.feedback-actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.feedback-actions button {
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: white;
+  background-color: #4F959D;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.feedback-actions button:hover {
+  background-color: #113A5D;
+}
+
+/* --- Responsive Layout --- */
+@media (max-width: 768px) {
+  .feedback-form {
+    padding: 2rem;
+    max-width: 90%;
+  }
+
+  .feedback-form h3 {
+    font-size: 1.6rem;
+  }
+
+  .feedback-form textarea {
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .feedback-form {
+    gap: 1rem;
+  }
+
+  .feedback-form textarea {
+    height: 100px;
+  }
+
+  .feedback-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

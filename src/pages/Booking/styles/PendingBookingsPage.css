@@ -1,0 +1,95 @@
+.pending-bookings {
+  padding: 40px;
+  background-color: #F9F9F9;
+  min-height: 80vh;
+}
+
+.pending-bookings h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #062743;
+  margin-bottom: 20px;
+}
+
+.booking-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.booking-card {
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+  border-left: 5px solid #4F959D;
+}
+
+.booking-card:hover {
+  transform: translateY(-5px);
+}
+
+.approve-button,
+.reject-button {
+  padding: 8px 12px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.approve-button {
+  background-color: #4CAF50;
+  margin-right: 6px;
+}
+
+.reject-button {
+  background-color: #d9534f;
+}
+
+.approve-button:hover {
+  background-color: #45a049;
+}
+
+.reject-button:hover {
+  background-color: #c9302c;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  font-size: 14px;
+  color: #4F959D;
+  margin-bottom: 10px;
+  padding: 0;
+  font-weight: 400;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  display: inline-block;
+  width: auto;
+  text-align: left;
+}
+
+.back-button:hover {
+  color: #113A5D;
+  text-decoration: underline;
+}
+.details-link {
+  background: none;
+  border: none;
+  color: #4F959D;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+  margin-top: 6px;
+  transition: color 0.2s ease;
+}
+
+.details-link:hover {
+  color: #113A5D;
+  text-decoration: underline;
+}

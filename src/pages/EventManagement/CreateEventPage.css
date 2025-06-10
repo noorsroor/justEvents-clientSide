@@ -1,0 +1,117 @@
+.create-event-container {
+  background-color: #F9F9F9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.back-btn {
+  align-self: flex-start;
+  margin-bottom: 10px;
+  color: #113a5d;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.3s ease;
+}
+
+.back-btn:hover {
+  color: #4f959d;
+}
+
+/* Heading Styling */
+.create-event-heading {
+  color: #062743;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* Form Styling */
+.event-form {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border: 2px solid #e0e0e0;
+}
+
+/* Input Styling */
+.form-input {
+  padding: 12px;
+  border: 2px solid #113A5D;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.form-input:focus {
+  border-color: #4F959D;
+  outline: none;
+}
+
+/* Submit Button */
+.submit-btn {
+  padding: 12px;
+  background-color: #4F959D;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #3b7b7f;
+  transform: translateY(-2px);
+}
+
+.submit-btn:active {
+  transform: translateY(0px);
+}
+
+/* Image Preview */
+.image-preview {
+  margin-top: 10px;
+  text-align: center;
+  background-color: #ffffff;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.image-preview img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+  transition: box-shadow 0.3s;
+}
+
+.image-preview img:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Select styling for venue dropdown */
+select.form-input {
+  appearance: none;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%23113A5D' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 18px 18px;
+}

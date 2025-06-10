@@ -1,0 +1,42 @@
+.featured-events-section {
+  padding: 3rem 1rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #062743;
+  margin-bottom: 2rem;
+}
+
+.event-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.loading-text,
+.empty-text {
+  color: #4f959d;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+}
+.explore-more-button {
+  margin-top: 20px;
+  background-color: #4f959d;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.explore-more-button:hover {
+  background-color: #113a5d;
+}

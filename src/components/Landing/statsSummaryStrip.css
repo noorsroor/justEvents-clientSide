@@ -1,0 +1,60 @@
+/* src/components/Landing/statsSummaryStrip.css */
+
+.stats-strip {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding: 3rem 2rem;
+  background-color: #ffffff;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  flex-wrap: wrap;
+  transition: background-color 0.3s ease;
+}
+
+.stat-card {
+  text-align: center;
+  color: #062743;
+  font-family: 'Segoe UI', sans-serif;
+  min-width: 160px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 1.2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.stat-icon {
+  margin-bottom: 0.8rem;
+  color: #4f959d;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #062743;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #113a5d;
+  margin-top: 0.4rem;
+}
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+  .stats-strip {
+    gap: 30px;
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .stat-card {
+    min-width: 130px;
+  }
+}
