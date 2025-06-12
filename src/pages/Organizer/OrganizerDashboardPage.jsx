@@ -1,26 +1,33 @@
-import React, { useEffect, useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
 import axios from 'axios';
-import NavBar from '../../components/common/NavBar';
-import Footer from '../../components/common/Footer';
+import { useEffect, useState } from 'react';
 import {
-  FaCheckCircle,
-  FaHourglassHalf,
-  FaCalendarAlt,
-  FaArrowLeft,
-  FaPlus,
-  FaClipboardList,
-  FaStar,
-  FaChartLine,
-  FaChartPie,
-  FaClock
+    FaArrowLeft,
+    FaCalendarAlt,
+    FaChartLine,
+    FaChartPie,
+    FaCheckCircle,
+    FaClipboardList,
+    FaClock,
+    FaHourglassHalf,
+    FaPlus,
+    FaStar
 } from 'react-icons/fa';
+import { Link, useNavigate } from 'react-router-dom';
 import {
-  LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, PieChart, Pie, Cell, Legend
+    Cell, Legend,
+    Line,
+    LineChart,
+    Pie,
+    PieChart,
+    ResponsiveContainer,
+    Tooltip,
+    XAxis, YAxis
 } from 'recharts';
+import Footer from '../../components/common/Footer';
+import NavBar from '../../components/common/NavBar';
 import './OrganizerDashboardPage.css';
 
-const BASE_URL = 'http://localhost:5000';
+const BASE_URL = 'https://justevents-serverside.onrender.com';
 
 const OrganizerDashboardPage = () => {
   const navigate = useNavigate();

@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { useEffect, useState } from 'react';
 import "../../pages/Booking/styles/BookingPage.css";
 
 const BookingPage = () => {
@@ -16,7 +16,7 @@ const BookingPage = () => {
           return;
         }
 
-        const response = await axios.get('http://localhost:5000/api/bookings/me', {
+        const response = await axios.get('https://justevents-serverside.onrender.com/api/bookings/me', {
           headers: {
             Authorization: `Bearer ${token}`,
           },

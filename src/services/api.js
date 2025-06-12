@@ -8,7 +8,7 @@ export const setNavigateHandler = (fn) => {
 };
 
 const api = axios.create({
-  baseURL: 'http://localhost:5000',
+  baseURL: 'https://justevents-serverside.onrender.com',
   headers: { 'Content-Type': 'application/json' },
   timeout: 10000,
 });
@@ -54,7 +54,7 @@ api.interceptors.response.use(
         const refreshToken = localStorage.getItem('refreshToken');
         if (!refreshToken) throw new Error('Missing refresh token');
 
-        const refreshResponse = await axios.post('http://localhost:5000/auth/refresh-token', {
+        const refreshResponse = await axios.post('https://justevents-serverside.onrender.com/auth/refresh-token', {
           token: refreshToken,
         });
 

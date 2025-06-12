@@ -1,6 +1,6 @@
 // src/context/UserContext.jsx
-import React, { createContext, useContext, useState, useEffect } from 'react';
 import { jwtDecode } from 'jwt-decode';
+import { createContext, useContext, useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
 
 const UserContext = createContext();
@@ -92,7 +92,7 @@ export const UserProvider = ({ children }) => {
       // Case 1: Try refresh token if no access token
       if (!accessToken && refreshToken) {
         try {
-          const res = await fetch('http://localhost:5000/auth/refresh-token', {
+          const res = await fetch('https://justevents-serverside.onrender.com/auth/refresh-token', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ token: refreshToken }),

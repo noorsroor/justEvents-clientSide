@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import './requestRole.css';
@@ -62,7 +62,7 @@ const RequestRolePage = () => {
         formData.append('attachment', attachmentFile);
       }
 
-      const response = await fetch('http://localhost:5000/auth/request-role', {
+      const response = await fetch('https://justevents-serverside.onrender.com/auth/request-role', {
         method: 'POST',
         headers: {
           Authorization: `Bearer ${token}`,

@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import NavBar from '../../components/common/NavBar';
 import Footer from '../../components/common/Footer';
+import NavBar from '../../components/common/NavBar';
 import './ViewRsvpsPage.css';
 
 const ViewRsvpsPage = () => {
@@ -14,7 +14,7 @@ const ViewRsvpsPage = () => {
     const fetchRsvps = async () => {
       try {
         const token = localStorage.getItem('accessToken');
-        const res = await axios.get(`http://localhost:5000/api/events/${id}/rsvps`, {
+        const res = await axios.get(`https://justevents-serverside.onrender.com/api/events/${id}/rsvps`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         const emails = res.data.data.map((rsvp) => rsvp.email); // only email

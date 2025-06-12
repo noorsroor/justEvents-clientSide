@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
-import { register } from '../../services/authService';
+import { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import { register } from '../../services/authService';
 
 import InputField from '../../components/common/InputField';
 import PrimaryButton from '../../components/common/PrimaryButton';
@@ -50,11 +50,11 @@ const RegisterPage = () => {
   };
 
   const handleGoogleLogin = () => {
-    window.location.href = 'http://localhost:5000/auth/google';
+    window.location.href = 'https://justevents-serverside.onrender.com/auth/google';
   };
 
   const handleMicrosoftLogin = () => {
-    window.location.href = 'http://localhost:5000/auth/microsoft';
+    window.location.href = 'https://justevents-serverside.onrender.com/auth/microsoft';
   };
 
   return (
